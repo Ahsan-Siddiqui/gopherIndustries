@@ -1,0 +1,25 @@
+//// UPLOAD YOUR PROJECT ON GITHUB /////
+git init
+touch.gitignore
+git config --global user.name Ahsan
+git config --global user.email "your email address"
+
+git add .
+git commit -m "Initial commit"
+git status #Just to See
+
+
+/// FOR SSH KEY ///
+ssh-keygen -t rsa -b 4096 -C "your email address"
+cat "your ssh path" then press enter
+git remote add origin git@github.com:Ahsan-Siddiqui/unibroApp.git
+git push origin master
+
+///  WHEN YOU DO ANY CHANGE YOU HAVE TO DO ONLY THESE STEPS  ///
+git status #Just to see the changes in red color
+git add .
+git commit -m "ChangesSuccessfully"
+git push origin master
+
+// FOR FATAL ERROR "unsafe repository" //
+git config --global --add safe.directory '*'
